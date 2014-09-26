@@ -41,7 +41,7 @@ angular.module('starter.controllers', ['ionic'])
 		})		
 	}
 })
-.controller('ItemCtrl', function($scope, Utils, IonicComponent, ItemConfig, Promise) {
+.controller('ItemCtrl', function($scope, Utils, IonicComponent, ItemConfig,EmailTemplate, Promise) {
 	
 	$scope.item = ItemConfig.Item.get(Utils.Params.itemId);
 	var area = $scope.item.area[0]
@@ -75,6 +75,8 @@ angular.module('starter.controllers', ['ionic'])
 			Promise.resolve({ url: '/api/email/v0/send',method:'POST',data: data})
 			.then(function(response){
 				IonicComponent.Loading.hide();
+				$scope.closeModal();
+
 			}, function(error){
 				//TO-DO
 				console.log(err)
