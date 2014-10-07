@@ -76,3 +76,31 @@ After setting up this Stamplay will instantly expose Restful APIs for our newly 
 
 This component doesn’t need any setup, couldn’t be easier than that ;)
 
+
+-----------------------
+
+
+## Creating the server side logic with Tasks
+
+Now let's add the tasks that will define the server side of our app. For our app we want that:
+
+### When a user signs up, send him a welcome email
+
+Trigger : User - Signup
+
+Action: Email - Send
+
+**User signup configuration**
+
+	none
+
+**Email Send configuration**
+
+	to: {{user.email}} 
+  from: classifieds@stamplay.com 
+  name: "Stamplay Classifieds"
+  Subject: "Thanks for ordering with Stamplay FoodMe"
+  Body: "Hi {{user.name.firstName}}, <br/> 
+        welcome to our Post and Search mobile service
+        <br/>
+        the easiest way to share what you want to sell search what you want to buy!"
