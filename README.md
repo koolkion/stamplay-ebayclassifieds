@@ -3,7 +3,7 @@ stamplay-ebayclassifieds
 
 A mobile Post &amp; Search free local classifieds app like Ebay's one. Built with Ionic Framework
 
-![EbayClassifieds](http://blog.stamplay.com/wp-content/uploads/2014/10/foto_iphone5s_silver_portrait-1024x6821.jpg "EbayClassifieds")
+![EbayClassifieds](http://blog.stamplay.com/wp-content/uploads/2014/10/white.jpg "EbayClassifieds")
 
 This time we go mobile! Today’s tutorial will show you how to use Stamplay with the amazing Ionic Framework to create a fully fledged native mobile app. We wanted to deliver something that can be reused in many context so we decided to build an Ebay Classifieds clone to let users post, search and sell their items.
 
