@@ -100,7 +100,22 @@ angular.module('starter.services', [])
 })
 .factory('Item', function(){ 
   var items = [];
-  return {
+  var getPromise = function () {
+      var def = $q.defer();
+      if (items.length > 0) {
+        def.resolve();
+      } else {
+         Promise.resolve({ method: 'GET', url: '/api/cobject/v0/item'})
+        .then(function(response){
+          items = response.data.data;
+          def.resolve();
+        },function(){})
+      }
+      return def.promise;
+    }
+    
+    return {
+    getPromise: getPromise,
     get: function(itemId) {
       // Simple index lookup
       for(var i= 0; i<items.length; i++){
