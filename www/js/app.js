@@ -41,6 +41,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         },
         areas : function(Area){
           return Area.getPromise();
+        },
+        items : function(Item){
+          return Item.getPromise();
         }
       },
     })
