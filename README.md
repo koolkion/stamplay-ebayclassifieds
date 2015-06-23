@@ -68,9 +68,9 @@ Name: `name`, Type: `string`, unique, required, area’s name
 
 After setting up this Stamplay will instantly expose Restful APIs for our newly resources the following URIs:
 
-`https://APPID.stamplay.com/api/cobject/v0/item`
-`https://APPID.stamplay.com/api/cobject/v0/category`
-`https://APPID.stamplay.com/api/cobject/v0/area`
+`https://APPID.stamplayapp.com/api/cobject/v0/item`
+`https://APPID.stamplayapp.com/api/cobject/v0/category`
+`https://APPID.stamplayapp.com/api/cobject/v0/area`
 
 ##### Email
 
