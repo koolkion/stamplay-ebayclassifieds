@@ -3,7 +3,7 @@ stamplay-ebayclassifieds
 
 A mobile Post &amp; Search free local classifieds app like Ebay's one. Built with Ionic Framework
 
-![EbayClassifieds](http://blog.stamplay.com/wp-content/uploads/2014/10/white.jpg "EbayClassifieds")
+![EbayClassifieds](https://blog.stamplay.com/wp-content/uploads/2014/10/white.jpg "EbayClassifieds")
 
 This time we go mobile! Today’s tutorial will show you how to use Stamplay with the amazing Ionic Framework to create a fully fledged native mobile app. We wanted to deliver something that can be reused in many context so we decided to build an Ebay Classifieds clone to let users post, search and sell their items.
 
@@ -24,17 +24,17 @@ To start building your own version of this great tutorial go and create a new pr
 
 This Ebay Classifieds clone is built around the following building blocks
 
-* [Users](https://www.stamplay.com/docs#user)
-* [Custom Objects](https://www.stamplay.com/docs#customobject)
+* [Users](https://stamplay.com/docs/rest-api#user)
+* [Custom Objects](https://stamplay.com/docs/rest-api#custom-object-api)
 * Mailchimp
-* [Email](https://www.stamplay.com/docs#email)
+* [Email](https://stamplay.com/docs/rest-api#email-api)
 
 
 After creating a new app on Stamplay let’s start by picking the component we need in this app that are. Lets see one-by-one how they are configured:
 
 ### User
 
-We chose to not do fancy things on the user signup this time and to go for the classic email+password. So we really only need to add the user component to our app recipe :)
+We chose to not do fancy things on the user signup this time and to go for the classic email+password. Since this is type of signup is enabled by default there is nothing to do.
 
 ### Custom Object
 
@@ -74,7 +74,7 @@ After setting up this Stamplay will instantly expose Restful APIs for our newly 
 
 ##### Email
 
-This component doesn’t need any setup, couldn’t be easier than that ;)
+This component doesn't need any setup and it's by default in the application, couldn't be easier than that ;)
 
 
 -----------------------
@@ -111,7 +111,7 @@ Action: Email - Send
 
 In the Admin section you can edit and manage data saved by your app. Here you can add content and we will now use it to create the tags that we want to make available. Click on “Admin” and then “Custom-Object” to access to the data admin section, then select “Area” or “Category” from the dropdown and start adding yours.
 
-![EbayClassifieds Admin](http://blog.stamplay.com/wp-content/uploads/2014/10/Schermata-2014-10-07-alle-15.17.26.png "EbayClassifieds Admin")
+![EbayClassifieds Admin](https://blog.stamplay.com/wp-content/uploads/2014/10/Schermata-2014-10-07-alle-15.17.26.png "EbayClassifieds Admin")
 
 
 -----------------------
@@ -140,7 +140,7 @@ Configure App Id, API key and Base URL
 
 Once you have downloaded the project you need to type in the app.js file the authorization credential to enable your app talking with our cloud platform. You can find all these informations in your app settings view.
 
-![EbayClassifieds Admin](http://blog.stamplay.com/wp-content/uploads/2014/10/Schermata-2014-10-07-alle-12.39.13.png "EbayClassifieds Admin")
+![EbayClassifieds Admin](https://blog.stamplay.com/wp-content/uploads/2014/10/Schermata-2014-10-07-alle-12.39.13.png "EbayClassifieds Admin")
 
 
 ##### Preview the app
@@ -159,7 +159,7 @@ Android (requires Android dev environment installed)
 	
 \**Currently on iOS 8 emulator there is a known issue that prevent the keyboard and picker views to be shown correctly. So if you can’t see that be sure that “Connect Hardware Keyboard” isn’t selected.*
 
-![EbayClassifieds iOS emulator](http://blog.stamplay.com/wp-content/uploads/2014/10/Schermata-2014-10-07-alle-14.15.26.png "EbayClassifieds iOS emulator")
+![EbayClassifieds iOS emulator](https://blog.stamplay.com/wp-content/uploads/2014/10/Schermata-2014-10-07-alle-14.15.26.png "EbayClassifieds iOS emulator")
 
 
 
