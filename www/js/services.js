@@ -98,7 +98,7 @@ angular.module('starter.services', [])
     }
   }
 })
-.factory('Item', function(){ 
+.factory('Item', function($q, Promise){ 
   var items = [];
   var getPromise = function () {
       var def = $q.defer();
