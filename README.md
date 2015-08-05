@@ -44,9 +44,8 @@ Let’s define the entities for this app, we will define “Item”, “Category
 
 * Name: `photo`, Type: `file`, required, the item’s picture
 * Name: `price`, Type: `number`, required, the item’s price
-* Name: `description`, Type: `string`, required, the author of the question (it will contain one user’s _id)
+* Name: `description`, Type: `string`, required, the item's description
 * Name: `email`, Type: string, `optional`, the item’s owner email address
-* Name: `address`, Type: `string`, answers posted for the current question listed as an array of answer’s _id s
 * Name: `tags`, Type: `collection` of category, the categories associated to the item listed as an array of categories’ _id
 * Name: `name`, Type: `string`, required, the name of the item
 * Name: `area`, Type: `relation` to an area, required, the item’s owner area
