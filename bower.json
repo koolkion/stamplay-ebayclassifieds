@@ -1,18 +1,8 @@
 {
-<<<<<<< HEAD
-  "name": "HelloIonic",
-  "private": "true",
-  "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.2.4",
-=======
   "name": "ebay",
   "private": "true",
-  "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0-beta.12"
-  },
   "dependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0-beta.12",
->>>>>>> 1acc0df9023e007e866bd5f5590b524695c41e1c
+    "ionic": "driftyco/ionic-bower#1.2.4",
     "ngCordova": "~0.1.20-alpha"
   }
 }

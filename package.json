@@ -1,19 +1,10 @@
 {
-<<<<<<< HEAD
   "name": "stamplay-ebayclassifieds",
   "version": "1.1.1",
   "description": "stamplay-ebayclassifieds: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
-=======
-  "name": "ebay",
-  "version": "1.0.0",
-  "description": "ebay: An Ionic project",
-  "dependencies": {
-    "gulp": "^3.5.6",
-    "gulp-sass": "^0.7.1",
->>>>>>> 1acc0df9023e007e866bd5f5590b524695c41e1c
     "gulp-concat": "^2.2.0",
     "gulp-minify-css": "^0.3.0",
     "gulp-rename": "^1.2.0"
@@ -22,7 +13,6 @@
     "bower": "^1.3.3",
     "gulp-util": "^2.2.14",
     "shelljs": "^0.3.0"
-<<<<<<< HEAD
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
@@ -34,7 +24,4 @@
   "cordovaPlatforms": [
     "ios"
   ]
-=======
-  }
->>>>>>> 1acc0df9023e007e866bd5f5590b524695c41e1c
 }

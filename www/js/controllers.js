@@ -20,8 +20,7 @@ angular.module('starter.controllers', ['ionic'])
 			$scope.item.name = '';
 
 		var where  = {"name": { "$regex" : ".*"+$scope.item.name+".*", $options: "i"  }}
-<<<<<<< HEAD
-
+		
 		if($scope.item.selectedCategory)
 			where.tags = ItemConfig.Category.get($scope.item.selectedCategory)._id
 
