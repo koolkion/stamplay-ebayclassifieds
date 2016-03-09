@@ -3,7 +3,9 @@ angular.module('starter.services', [])
 .factory('Promise',function($http, APPID, APIKEY, BASEURL){
   return {
     resolve : function(data){
+
       data.url = BASEURL + data.url
+
       if(!data.headers)
         data.headers = {}
       data.headers.Authorization = 'Basic '+ btoa(APPID+":"+APIKEY);
@@ -20,7 +22,7 @@ angular.module('starter.services', [])
     },
     signup: function(data){
       return Promise.resolve({ method: 'POST', data: data, url: '/api/user/v1/users'})
-    },
+    }
   }
 })
 .factory('Category', function($q, Promise) {
@@ -30,7 +32,9 @@ angular.module('starter.services', [])
       if (categories.length > 0) {
         def.resolve();
       } else {
+
         Promise.resolve({ method: 'GET', url: '/api/cobject/v1/category'})
+
         .then(function(response){
           categories = response.data.data;
           def.resolve();
@@ -68,7 +72,9 @@ angular.module('starter.services', [])
       if (areas.length > 0) {
         def.resolve();
       } else {
+
          Promise.resolve({ method: 'GET', url: '/api/cobject/v1/area'})
+
         .then(function(response){
           areas = response.data.data;
           def.resolve();
@@ -98,6 +104,7 @@ angular.module('starter.services', [])
     }
   }
 })
+
 .factory('Item', function($q, Promise){
   var items = [];
   var getPromise = function () {
@@ -105,7 +112,9 @@ angular.module('starter.services', [])
       if (items.length > 0) {
         def.resolve();
       } else {
+
          Promise.resolve({ method: 'GET', url: '/api/cobject/v1/item'})
+
         .then(function(response){
           items = response.data.data;
           def.resolve();
@@ -202,9 +211,9 @@ angular.module('starter.services', [])
       return bb;
     },
     validateAll: function(form , file){
-      if(Object.keys(form).length == 8, file){
+      if(Object.keys(form).length == 8 && file){
         return true
-      } else
+      }else
         return false;
     }
   };

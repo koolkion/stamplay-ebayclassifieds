@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<<<<<<< HEAD
 <widget id="com.ionicframework.stamplayebayclassifieds797327" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>stamplay-ebayclassifieds</name>
   <description>
@@ -6,13 +7,25 @@
     </description>
   <author email="you@example.com" href="http://example.com.com/">
       Your Name Here
+=======
+<widget id="com.ionicframework.ebay449174" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>ebay</name>
+  <description>
+        An Ionic Framework and Cordova project.
+    </description>
+  <author email="hi@ionicframework" href="http://ionicframework.com/">
+      Ionic Framework Team
+>>>>>>> 1acc0df9023e007e866bd5f5590b524695c41e1c
     </author>
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
+<<<<<<< HEAD
   <preference name="android-minSdkVersion" value="16"/>
+=======
+>>>>>>> 1acc0df9023e007e866bd5f5590b524695c41e1c
   <preference name="BackupWebStorage" value="none"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>

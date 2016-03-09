@@ -4,7 +4,7 @@ angular.module('starter.templatesComponent', [])
 		confirmPublish : function(scope, item){
 			return data = {
 							to:       scope.publish.email,
-							toname:   scope.publish.email, 
+							toname:   scope.publish.email,
 					 		from:     'stambay@stamplay.com',
 					 		fromname: 'StamBay',
 					 		subject:  'Offer '+ item.name,
@@ -15,14 +15,14 @@ angular.module('starter.templatesComponent', [])
 		contactSeller: function(scope, item){
 			return data = {
 							to:       item.email,
-							toname:   item.email, 
+							toname:   item.email,
 					 		from:     scope.contact.email,
 					 		fromname: 'StamBay',
 					 		subject:  'Offer '+ item.name,
 					 		body:     scope.contact.text
 						}
 		}
-	}				
+	}
 })
 .factory('PopupTemplate', function(){
 	return {
@@ -38,7 +38,7 @@ angular.module('starter.templatesComponent', [])
 			return data = {
 		     title: 'Delete an Offer',
 		     template: 'Are you sure you want to delete this offer?',
-				 okText: 'Delete', 
+				 okText: 'Delete',
 				 okType: 'button-energized'
 			}
 		},
@@ -64,6 +64,5 @@ angular.module('starter.templatesComponent', [])
 	    	]
 	  	}
 		}
-	}				
+	}
 })
-

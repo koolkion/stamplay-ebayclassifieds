@@ -20,6 +20,7 @@ angular.module('starter.controllers', ['ionic'])
 			$scope.item.name = '';
 
 		var where  = {"name": { "$regex" : ".*"+$scope.item.name+".*", $options: "i"  }}
+<<<<<<< HEAD
 
 		if($scope.item.selectedCategory)
 			where.tags = ItemConfig.Category.get($scope.item.selectedCategory)._id
@@ -30,6 +31,7 @@ angular.module('starter.controllers', ['ionic'])
 		where = JSON.stringify(where)
 
 		Promise.resolve({method: 'GET', url: '/api/cobject/v1/item?where='+where})
+
 		.then(function(response){
 			$scope.load = false;
 			$scope.items = response.data.data;
@@ -73,6 +75,7 @@ angular.module('starter.controllers', ['ionic'])
 			IonicComponent.Loading.show({template: 'Sending Email...'});
 			//SEND EMAIL
 			Promise.resolve({ url: '/api/email/v1/send',method:'POST',data: data})
+
 			.then(function(response){
 				IonicComponent.Loading.hide();
 				$scope.closeModal();
@@ -139,11 +142,13 @@ angular.module('starter.controllers', ['ionic'])
 		 	IonicComponent.Loading.show({template: 'Sending Data...'});
 
 		 	Promise.resolve({url:'/api/cobject/v1/item', method:'POST', data:formDataResult, transformRequest: angular.identity, headers: {'Content-Type': undefined}})
+
 		 	.then(function(response){
 		 		IonicComponent.Loading.hide();
   	  	var data = EmailTemplate.confirmPublish($scope,response.data)
 				//SEND EMAIL
 				Promise.resolve({ url: '/api/email/v1/send',method:'POST', data: data})
+
 				.then(function(response){
 					var popup = PopupTemplate.popupEmailPublish()
 					var alertPopup = IonicComponent.Popup.alert(popup);
@@ -182,6 +187,7 @@ angular.module('starter.controllers', ['ionic'])
 		$scope.load = true;
 		var where = settingWhere()
 		Promise.resolve({method: 'GET',url:  '/api/cobject/v1/item?where='+where})
+
 		.then(function(response){
 			$scope.load = false;
 			$scope.items = response.data.data
@@ -195,6 +201,7 @@ angular.module('starter.controllers', ['ionic'])
 		var where = settingWhere()
 
 		Promise.resolve({method: 'GET',url:  '/api/cobject/v1/item?where='+where})
+
 		.then(function(response){
 			$scope.items = response.data.data
 			YourItems.set(response.data.data)
@@ -216,6 +223,7 @@ angular.module('starter.controllers', ['ionic'])
 	     	.then(function(response){
      			var index = $scope.items.indexOf(obj)
 					$scope.items.splice(index, 1);
+
 					YourItems.set($scope.items)
 	     	},function(err){
 	     		console.log(err)
@@ -245,12 +253,15 @@ angular.module('starter.controllers', ['ionic'])
 	  myPopup.then(function(res) {
 	  	if(res){
 			 	IonicComponent.Loading.show({template: 'Publish...'});
+
 		    Promise.resolve({method: 'PATCH', data : {publish: true}, timeout: 3000, url: '/api/cobject/v1/item/'+res})
+
 		    .then(function(response){
 					IonicComponent.Loading.hide();
 		    },function(err){
 					IonicComponent.Loading.hide();
 	  	 		IonicComponent.Loading.show({template: 'Error'});
+
 		    	$timeout(function(){IonicComponent.Loading.hide();},2000)
 		    })
   		}
@@ -270,6 +281,7 @@ angular.module('starter.controllers', ['ionic'])
 		},function(error){
 			console.log(error)
 			IonicComponent.Loading.show({template: 'Ops something went wrong...'});
+
 	    $timeout(function() {IonicComponent.Loading.hide();}, 2000)
 		})
 	}
