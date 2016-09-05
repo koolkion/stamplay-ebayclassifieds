@@ -22,9 +22,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   });
 })
 
-.constant('APPID', 'YOUR-APP-ID-HERE')
-.constant('APIKEY','YOUR-API-KEY-HERE')
-.constant('BASEURL', 'YOUR-BASEURL-HERE') // e.g. http://APPID.stamplayapp.com
+.constant('APPID', 'freetradr')
+.constant('APIKEY','43ea03ada07e6e23ef7d7ac28e4850488f6f9ca250020357a1c228b49236de64')
+.constant('BASEURL', 'http://freetradr.stamplayapp.com') // e.g. http://APPID.stamplayapp.com
 
 .config(function($stateProvider, $urlRouterProvider) {
   // Ionic uses AngularUI Router which uses the concept of states
